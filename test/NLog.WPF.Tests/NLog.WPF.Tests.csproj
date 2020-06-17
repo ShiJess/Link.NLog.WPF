@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyTitle>NLog.WPF.Tests</AssemblyTitle>  
+    <Copyright>Copyright © 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.extensibility.execution" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <!--<Reference Include="System.Data.DataSetExtensions" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NLog.WPF\NLog.WPF.csproj" />
+  </ItemGroup>
+
+</Project>

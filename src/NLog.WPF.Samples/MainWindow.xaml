@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLog.WPF.Samples"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" 
+        x:Class="NLog.WPF.Samples.MainWindow"
+        mc:Ignorable="d" Background="Black" x:Name="MainWindow1"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+                     
+    </Window.Resources>
+
+  
+    <Grid Background="Black" >
+        <RichTextBox x:Name="richTextBox1" IsReadOnly="True" Hyperlink.Click="Hyperlink_Click" IsDocumentEnabled="True"  Background="Black" Margin="0,0,0,48" >
+            <FlowDocument IsOptimalParagraphEnabled="True"  IsHyphenationEnabled="True">
+                <Paragraph>
+                    <!--<TextBlock>-->
+                <Hyperlink Click="Hyperlink_Click" NavigateUri="http://www.baidu.com" >
+                    0000000000000
+                        <!--<Run Text="aaaaaaa"/>-->
+                        <!--<TextBlock Text="aaaaaaaaaaaaaaaaaaaaaaaaaaa" />-->
+                    </Hyperlink>
+                <!--</TextBlock>-->
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Margin="0,376,0,0" Click="Button_Click" />
+
+        
+    </Grid>
+</Window>
